@@ -1,0 +1,433 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/generador.o
+resVect CODE 0 0 0 3 2 1
+code CODE 0 0 0 24C 2 1
+udata_shr COMMON 1 70 70 10 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 24C-1FFF 2
+ENTRY 24C-1FFF 2
+IDLOC 2000-2003 2
+CODE 24C-1FFF 2
+EEDATA 2100-21FF 2
+STRCODE 24C-1FFF 2
+STRING 24C-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/generador.o
+0 resVect CODE >97:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+0 resVect CODE >99:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+2 resVect CODE >100:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+0 code CODE >109:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+4 code CODE >111:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+5 code CODE >112:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+6 code CODE >113:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+7 code CODE >118:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+8 code CODE >119:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+9 code CODE >123:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+A code CODE >124:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+B code CODE >125:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+C code CODE >126:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+D code CODE >128:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+E code CODE >137:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+100 code CODE >139:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+101 code CODE >140:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+102 code CODE >141:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+103 code CODE >142:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+104 code CODE >145:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+105 code CODE >146:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+106 code CODE >151:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+108 code CODE >155:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+109 code CODE >156:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+10A code CODE >157:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+10B code CODE >159:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+10C code CODE >160:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+10D code CODE >162:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+10E code CODE >163:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+10F code CODE >165:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+110 code CODE >166:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+111 code CODE >169:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+112 code CODE >170:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+113 code CODE >171:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+114 code CODE >173:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+115 code CODE >174:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+116 code CODE >176:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+117 code CODE >179:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+118 code CODE >180:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+119 code CODE >182:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+11A code CODE >195:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+11B code CODE >196:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+11C code CODE >197:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+11D code CODE >198:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+11E code CODE >199:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+11F code CODE >215:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+120 code CODE >216:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+121 code CODE >217:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+122 code CODE >218:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+123 code CODE >222:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+124 code CODE >223:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+125 code CODE >224:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+126 code CODE >225:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+127 code CODE >228:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+128 code CODE >229:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+129 code CODE >230:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+12A code CODE >231:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+12B code CODE >234:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+12C code CODE >235:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+12D code CODE >236:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+12E code CODE >237:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+12F code CODE >240:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+130 code CODE >241:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+131 code CODE >242:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+132 code CODE >243:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+133 code CODE >246:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+134 code CODE >247:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+135 code CODE >248:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+136 code CODE >249:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+137 code CODE >252:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+138 code CODE >258:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+139 code CODE >259:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+13A code CODE >260:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+13B code CODE >261:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+13C code CODE >262:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+13D code CODE >263:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+13E code CODE >267:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+13F code CODE >268:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+140 code CODE >269:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+141 code CODE >270:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+142 code CODE >274:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+143 code CODE >275:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+144 code CODE >276:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+145 code CODE >277:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+146 code CODE >284:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+147 code CODE >285:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+148 code CODE >286:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+149 code CODE >287:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+14A code CODE >288:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+14B code CODE >289:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+14C code CODE >290:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+14D code CODE >291:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+14E code CODE >292:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+14F code CODE >295:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+150 code CODE >296:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+151 code CODE >297:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+152 code CODE >298:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+153 code CODE >299:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+154 code CODE >300:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+155 code CODE >301:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+156 code CODE >302:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+157 code CODE >303:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+158 code CODE >306:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+159 code CODE >307:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+15A code CODE >308:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+15B code CODE >310:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+15C code CODE >311:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+15D code CODE >312:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+15E code CODE >314:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+15F code CODE >315:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+160 code CODE >316:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+161 code CODE >318:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+162 code CODE >332:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+163 code CODE >333:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+164 code CODE >334:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+166 code CODE >334:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+167 code CODE >334:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+168 code CODE >335:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+16A code CODE >335:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+16B code CODE >335:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+16C code CODE >335:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+16D code CODE >336:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+16E code CODE >342:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+16F code CODE >343:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+170 code CODE >344:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+171 code CODE >345:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+172 code CODE >346:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+173 code CODE >349:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+174 code CODE >350:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+175 code CODE >355:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+176 code CODE >356:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+177 code CODE >357:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+178 code CODE >358:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+179 code CODE >359:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+17A code CODE >362:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+17B code CODE >363:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+17C code CODE >364:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+17D code CODE >365:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+17E code CODE >366:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+17F code CODE >369:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+180 code CODE >370:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+181 code CODE >372:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+182 code CODE >375:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+183 code CODE >376:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+184 code CODE >377:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+185 code CODE >378:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+186 code CODE >381:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+187 code CODE >382:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+188 code CODE >385:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+189 code CODE >386:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+18A code CODE >388:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+18B code CODE >392:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+18C code CODE >394:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+18D code CODE >395:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+18E code CODE >396:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+18F code CODE >397:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+190 code CODE >398:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+191 code CODE >399:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+192 code CODE >400:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+193 code CODE >401:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+194 code CODE >402:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+195 code CODE >404:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+196 code CODE >408:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+197 code CODE >409:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+198 code CODE >410:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+199 code CODE >411:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+19A code CODE >412:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+19B code CODE >413:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+19C code CODE >417:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+19D code CODE >418:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+19E code CODE >419:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+19F code CODE >420:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A0 code CODE >421:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A1 code CODE >422:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A2 code CODE >426:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A3 code CODE >427:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A4 code CODE >428:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A5 code CODE >429:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A6 code CODE >430:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A7 code CODE >431:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A8 code CODE >435:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1A9 code CODE >436:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1AA code CODE >437:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1AB code CODE >438:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1AC code CODE >439:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1AD code CODE >440:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1AE code CODE >449:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B0 code CODE >450:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B1 code CODE >451:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B2 code CODE >453:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B4 code CODE >454:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B5 code CODE >455:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B6 code CODE >458:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B7 code CODE >459:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B8 code CODE >460:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1B9 code CODE >461:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1BA code CODE >464:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1BB code CODE >465:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1BC code CODE >466:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1BD code CODE >469:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1BE code CODE >470:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1BF code CODE >471:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C0 code CODE >472:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C1 code CODE >475:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C3 code CODE >476:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C4 code CODE >477:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C5 code CODE >478:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C6 code CODE >479:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C7 code CODE >480:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C8 code CODE >481:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1C9 code CODE >482:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1CA code CODE >487:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1CC code CODE >488:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1CD code CODE >489:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1CE code CODE >490:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1CF code CODE >493:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D1 code CODE >494:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D2 code CODE >495:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D3 code CODE >496:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D4 code CODE >497:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D5 code CODE >498:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D6 code CODE >502:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D7 code CODE >503:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D8 code CODE >504:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1D9 code CODE >505:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+1DA code CODE >510:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+200 code CODE >512:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+201 code CODE >513:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+202 code CODE >514:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+203 code CODE >515:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+204 code CODE >516:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+205 code CODE >520:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+206 code CODE >521:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+207 code CODE >522:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+208 code CODE >523:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+209 code CODE >524:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+20A code CODE >525:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+20B code CODE >526:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+20C code CODE >527:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+20D code CODE >528:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+20E code CODE >529:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+20F code CODE >530:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+210 code CODE >531:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+211 code CODE >532:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+212 code CODE >533:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+213 code CODE >534:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+214 code CODE >535:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+215 code CODE >539:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+216 code CODE >540:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+217 code CODE >541:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+218 code CODE >542:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+219 code CODE >543:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+21A code CODE >548:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+21B code CODE >549:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+21C code CODE >550:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+21D code CODE >553:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+21E code CODE >554:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+21F code CODE >555:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+220 code CODE >558:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+221 code CODE >559:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+222 code CODE >560:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+223 code CODE >563:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+224 code CODE >564:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+225 code CODE >565:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+226 code CODE >566:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+227 code CODE >569:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+228 code CODE >570:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+229 code CODE >571:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+22A code CODE >574:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+22B code CODE >575:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+22C code CODE >576:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+22D code CODE >577:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+22E code CODE >578:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+22F code CODE >579:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+230 code CODE >580:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+231 code CODE >581:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+232 code CODE >582:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+233 code CODE >583:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+234 code CODE >584:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+235 code CODE >585:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+236 code CODE >586:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+237 code CODE >589:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+238 code CODE >590:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+239 code CODE >591:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+23A code CODE >592:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+23B code CODE >593:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+23C code CODE >594:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+23D code CODE >595:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+23E code CODE >596:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+23F code CODE >597:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+240 code CODE >598:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+241 code CODE >599:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+242 code CODE >600:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+243 code CODE >601:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+244 code CODE >602:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+245 code CODE >603:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+246 code CODE >604:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+247 code CODE >605:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+248 code CODE >606:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+249 code CODE >607:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+24A code CODE >608:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+24B code CODE >609:E:\labs\git\proyecto1\generador_frecuencias.X\generador.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 24C 0 ABS 0 - -
+__Hspace_1 80 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 80 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_shr 1 70 70 10 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
